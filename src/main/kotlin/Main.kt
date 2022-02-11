@@ -19,14 +19,11 @@ fun main(args: Array<String>){
     //TODO Use String templates i.e. ${} to insert the method calls into the actual println string.
     //TODO tidy up the printing layout so that it is neat and has a nicer UI - you can choose what you would like to do
     //     here, maybe add breaks, lines, tabs, dividers, etc, whatever you think for making it nicer / easier to read.
-    print("The list is: ")
-    println(colours.getAll())
+    println("The list is: " + colours.getAll())
 
-    print("The List has ___ elements stored")
-    println(colours.numberOfColours())
+    println("The List has " + colours.numberOfColours() + " elements stored")
 
-    print("___ is the first colour in the list")
-    println(colours.firstColour())
+    println(colours.firstColour() + " is the first colour in the list")
 
     print("___ is the last colour in the list")
     print(colours.lastColour())
