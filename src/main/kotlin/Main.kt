@@ -25,14 +25,11 @@ fun main(args: Array<String>){
 
     println(colours.firstColour() + " is the first colour in the list")
 
-    print(colours.lastColour() + " is the last colour in the list")
+    println(colours.lastColour() + " is the last colour in the list")
 
+    println("Sorted list is: " + colours.coloursInAplhabeticOrder())
 
-    println("Sorted list is: ")
-    print(colours.coloursInAplhabeticOrder())
-
-    print("CAPITALISED list is:")
-    print(colours.coloursInAllCapitals())
+    println("CAPITALISED list is:" + colours.coloursInAllCapitals())
 
     println("Colours starting with specific letter ___ [ B was chosen ]")
     print(colours.coloursStartingWithLetter('B'))

@@ -23,18 +23,24 @@ class Colours {
     }
 
     fun coloursInAplhabeticOrder() : List<String>{
-        //TODO return the colours in alphabetical order
-        return listOf("this should return colours in alphabetic order")
+        //Returns the colours in alphabetical order
+        return colours.sortedBy { it }
+
+        /*
+       Below should also work but isnt tested so who knows
+       val alpha = colours.sortedBy().uppercase()
+       return listOf(alpha.toString())
+        */
     }
 
     fun coloursInAllCapitals() : List<String>{
-        //TODO return the colours in ALL CAPS
-        return listOf("this should return colours in all capitals")
+        //Returns the colours in ALL CAPS
+        return listOf(colours.toString().uppercase())
     }
 
     fun coloursStartingWithLetter(letter: Char) : List<String>{
         //TODO return the colours starting with the letter passed as a parameter
-        return listOf("this should return colours that start with ${letter}")
+        return listOf("${letter}")
     }
 
     fun coloursWithSpecificNumberOfChars(size: Int) : List<String>{
