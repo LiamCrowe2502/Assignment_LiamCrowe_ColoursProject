@@ -31,13 +31,13 @@ fun main(args: Array<String>){
 
     println("CAPITALISED list is:" + colours.coloursInAllCapitals())
 
-    println("Colours starting with specific letter" + colours.coloursStartingWithLetter('B') + "[ B was chosen ]")
+    println("Colours starting with specific letter " +
+            colours.coloursStartingWithLetter('B') + " [ B was chosen ]")
 
-    println("Colours with a specific number of chars ___ [ 6 was chosen]")
-    println(colours.coloursWithSpecificNumberOfChars(6))
+    println("Colours with a specific number of chars " +
+            colours.coloursWithSpecificNumberOfChars(6) + " [ 6 was chosen]")
 
-    println("___ have less than less 6 chars ")
-    print (colours.coloursWithLessCharsThan(6))
+    println(colours.coloursWithLessCharsThan(6) + " have less than less 6 chars ")
 
     println("True or false, is blue in the list: ")
     print(colours.isColourInTheList("blue"))

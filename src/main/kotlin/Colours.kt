@@ -44,17 +44,17 @@ class Colours {
     }
 
     fun coloursWithSpecificNumberOfChars(size: Int) : List<String>{
-        //TODO return the colours that have exactly the same number of chars as the number passed as a parameter
-        return listOf("this should return colours that have ${size} chars")
+        //Returns the colours that have exactly the same number of chars as the number passed as a parameter
+        return colours.filter { it.length == 6 }
     }
 
     fun coloursWithLessCharsThan(size: Int) : List<String>{
         //TODO return the colours that have less chars than the number passed as s parameter
-        return listOf("this should return colours less than ${size} chars")
+        return colours.filter { it.length < 6 }
     }
 
     fun isColourInTheList(colour : String) : Boolean{
-        //TODO return true of the colour passed as a parameter is in the list and false otherwise
+        //TODO return true if the colour passed as a parameter is in the list and false otherwise
         // Note: the search should be case insensitive - if blue is passed as a parameter it should find Blue, BLUE etc.
         return false
     }
