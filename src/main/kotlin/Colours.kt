@@ -49,17 +49,42 @@ class Colours {
     }
 
     fun coloursWithLessCharsThan(size: Int) : List<String>{
-        //TODO return the colours that have less chars than the number passed as s parameter
+        //Returns the colours that have less chars than the number passed as s parameter
         return colours.filter { it.length < 6 }
     }
 
     fun isColourInTheList(colour : String) : Boolean{
         //TODO return true if the colour passed as a parameter is in the list and false otherwise
         // Note: the search should be case insensitive - if blue is passed as a parameter it should find Blue, BLUE etc.
+        if (colours.contains("Blue") || colours.contains("Blue".lowercase()) || colours.contains("Blue".uppercase())) {
+            return true
+        }
         return false
     }
 
-    //TODO Write THREE additional functions of your choice that will perform some sort of
+    fun ListColourUnderEachOther() {
+        //Returns the colours one after the other on a new line
+        for (colours in colours) {
+            println(colours)
+        }
+    }
+    //Write THREE additional functions of your choice that will perform some sort of
     // analysis on the colours list.
 
+    fun coloursStartingWithLetterAndSortsAndLowerCase(letter: Char) : List<String>{
+        //Returns the colours starting with the letter 'B' passed as a parameter and sorted and changed to lowercase
+        return colours.filter { it.startsWith('B') }
+            .sortedBy { it }
+            .map { it.lowercase() }
+    }
+
+    fun takeFirstThreeNumbers() : List<String>{
+        //Returns the first three colours
+        return colours.take( 3 )
+    }
+
+    fun removesFirstThreeNumbers() : List<String>{
+        //Returns the first three colours
+        return colours.drop( 3 )
+    }
 }
